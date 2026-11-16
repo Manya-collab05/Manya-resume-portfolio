@@ -1,0 +1,291 @@
+/* ==========================================
+   CSS Reset & Base Styles
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfbf7; /* Soft warm off-white background */
+    color: #4a4a4a;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* ==========================================
+   Navigation Bar (Pastel Blue & Pink accents)
+   ========================================== */
+.navbar {
+    background-color: #e3edf7; /* Soft pastel blue */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #d66868; /* Pastel coral/red accent */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d66868; /* Pastel red hover effect */
+}
+
+/* ==========================================
+   Hero Header Section (Pastel Pink & Yellow Theme)
+   ========================================== */
+.hero {
+    background: linear-gradient(135deg, #fce4ec 0%, #fff9c4 100%); /* Pastel pink to soft yellow gradient */
+    padding: 8rem 2rem 5rem 2rem;
+    text-align: center;
+    border-bottom: 3px solid #f8bbd0;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #d66868; /* Pastel red/coral button */
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #444;
+    border: 1px solid #dcdcdc;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* ==========================================
+   Main Content Container & Cards
+   ========================================== */
+.container {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border-left: 5px solid #b3e5fc; /* Soft pastel blue border accent */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #fce4ec; /* Pastel pink underline for headings */
+}
+
+.card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   Experience Section Styles
+   ========================================== */
+.experience-item {
+    margin-bottom: 1.8rem;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 0.4rem;
+}
+
+.experience-item h3 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.company {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #d66868; /* Pastel red highlight for companies/roles */
+}
+
+/* ==========================================
+   Education & Grades Section Styles
+   ========================================== */
+.edu-item h3 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 0.2rem;
+}
+
+.degree {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.grades-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.grade-box {
+    background-color: #fffde7; /* Pastel yellow box for grades */
+    border: 1px solid #fff59d;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ==========================================
+   Skills Grid Styles
+   ========================================== */
+.skills-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.skills-grid li {
+    background-color: #e1f5fe; /* Pastel light blue skill pills */
+    color: #0277bd;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* ==========================================
+   Contact Section Styles
+   ========================================== */
+.contact-details {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-details a {
+    color: #d66868;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fce4ec; /* Soft pastel pink footer */
+    color: #666;
+    font-size: 0.85rem;
+    margin-top: 4rem;
+    border-top: 1px solid #f8bbd0;
+}
+
+/* ==========================================
+   Responsive Design for Mobile Screens
+   ========================================== */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
